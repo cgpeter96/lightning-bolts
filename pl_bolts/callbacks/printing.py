@@ -90,7 +90,7 @@ def dicts_to_table(
         raise ValueError(f"bad pad length {len(pads)}, expected: {len(keys)}")  # type: ignore[arg-type]
     if fcodes is None:
         fcodes = [""] * len(keys)  # type: ignore[arg-type]
-    elif len(fcodes) != len(fcodes):
+    elif len(fcodes) != len(keys):
         raise ValueError(f"bad fcodes length {len(fcodes)}, expected: {len(keys)}")  # type: ignore[arg-type]
     if convert_headers is None:
         convert_headers = {}
